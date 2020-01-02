@@ -949,8 +949,8 @@ public class PrecompiledContracts {
       byte[] bindingSig = new byte[64];
       byte[] signHash = new byte[32];
 
-      System.arraycopy(data, 0, cv, 0, 32);
-      System.arraycopy(data, 32, cm, 0, 32);
+      System.arraycopy(data, 0, cm, 0, 32);
+      System.arraycopy(data, 32, cv, 0, 32);
       System.arraycopy(data, 64, epk, 0, 32);
       System.arraycopy(data, 96, proof, 0, 192);
       System.arraycopy(data, 288, bindingSig, 0, 64);
